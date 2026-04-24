@@ -32,6 +32,9 @@ The design bets: skills over chat (repeatable beats ad-hoc), files over database
 - `/market-research` — landscape scans, sizing, segment research
 - `/narrative` — positioning and messaging
 
+**GTM workflow**
+Run `/market-research`, `/competitive-analysis`, `/narrative` first. The GTM plan follows from that output. Write it to `docs/gtm/`.
+
 **Comms and content**
 - `/comms` — leadership updates, investor comms
 - `/reply` — voice-matched replies for any channel
