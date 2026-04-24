@@ -101,10 +101,3 @@ product-os/
 └── projects/
 ```
 
-## What's next
-
-[Alloy](https://github.com/namankumar/alloy) is the GUI and web layer. Browser-accessible, shareable with teammates. product-os is the foundation.
-
----
-
-*Built with [Claude Code](https://claude.ai/code). Powered by your own API keys.*
