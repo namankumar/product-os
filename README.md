@@ -8,6 +8,8 @@ Context compounds. OKRs, positioning, team dynamics, writing voice. All in files
 
 Output quality is enforced at the skill level. Each skill defines output structure, required context reads, and a failure-mode checklist Claude applies before producing final output. The writing eval covers 25 named patterns across four categories: LLM voice (summary bows, corrective antithesis, parallel triads, hedge words), redundancy (bracket explanations, bold restatements), rhythm (staccato on repeat, cookie-cutter paragraphs), and generic writing. Flagged output gets rewritten before it lands in docs.
 
+The design bets: skills over chat (repeatable beats ad-hoc), files over databases (portable beats locked-in), explicit context over implicit memory (auditable beats opaque). Each bet trades setup cost for compounding return.
+
 ## What you can do
 
 **Daily operations**
@@ -57,6 +59,12 @@ You                Claude Code              Workspace
 ```
 
 Claude Code runs the skill. The workspace is the memory.
+
+## Brief architecture
+
+The brief skill runs 16 parallel refresh agents, one per data source, then a single synthesis agent with a fresh 200K-token context. The refresh agents write to cache files and return a delta: what changed since the last run. The synthesis agent reads all 16 caches plus all context files in one pass and cross-references across them.
+
+Refresh agents are stateless and parallelizable. The synthesis agent gets zero conversation overhead. Just clean data and context.
 
 ## How to fork
 
