@@ -14,6 +14,8 @@ This system is different. It's a workspace — a structured set of files that Cl
 
 The result: an AI that operates like a senior colleague, not a search engine. It knows your OKRs, your positioning, your team dynamics, your writing style. It can draft a strategy doc, run competitive research, prep for a board meeting, or track user relationships — and do each one consistently, the way you'd want it done.
 
+We chose markdown files over a database or GUI because the output needs to be portable and version-controlled. The day you switch tools or fork the repo, your entire institutional memory is plain text. A proprietary workflow tool locks you in. This doesn't.
+
 ## How it works
 
 ```
