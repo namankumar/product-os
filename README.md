@@ -14,7 +14,7 @@ This system is different. It's a workspace — a structured set of files that Cl
 
 The result: an AI that operates like a senior colleague, not a search engine. It knows your OKRs, your positioning, your team dynamics, your writing style. It can draft a strategy doc, run competitive research, prep for a board meeting, or track user relationships — and do each one consistently, the way you'd want it done.
 
-Most teams skip the work they know they should do: competitive research before a roadmap call, narrative before a pitch, user synthesis. Too slow to justify. Skills make each one fast enough to happen.
+Skills capture how great product work gets done: research before a decision, narrative before a pitch, user synthesis. Invoke one, get the output. Context compounds over time.
 
 ## How it works
 
