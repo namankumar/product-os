@@ -20,7 +20,7 @@ Surface all open todos from scattered sources, organize them into a scannable Ki
 - `context/okr-status.md` — OKR targets (prioritize tasks that advance red/yellow KRs)
 - `context/org-dynamics.md` — political context (flag when a task has political implications)
 - `context/cadences.md` — deadlines, what's due when
-- `docs/product/master-shield-prd-roadmap.md` — master PRD and roadmap (source of truth)
+- `docs/product/master-prd-roadmap.md` — master PRD and roadmap (source of truth)
 - `docs/strategy/` — priorities
 - `docs/feedback/` — user input
 
@@ -209,9 +209,9 @@ Organize by day with 4-6 focused tasks per day. Start with today, then each upco
 - Send Leo analytics to Slack (Analytics)
 - Update OKRs → Kyle (Leadership)
 - {{PRODUCT}} feemaster runbook (Team)
-- Ambassadors (ETHDenver)
-- Scratch cards (ETHDenver)
-- Booth staffing (ETHDenver)
+- Ambassadors ({{LAUNCH_EVENT}})
+- Scratch cards ({{LAUNCH_EVENT}})
+- Booth staffing ({{LAUNCH_EVENT}})
 
 **Post-Launch (20 items):**
 - Analytics for onboarding (Analytics)
@@ -262,7 +262,7 @@ When moving completed items to `cache/tasks/done.md`:
 | Task | Category | Priority | Source | Added | Completed |
 |------|----------|----------|--------|-------|-----------|
 
-4. **Categories**: Leadership & Comms, Launch Prep, Team & Coordination, Analytics & Infra, Product & Design, Extension & Mobile, Partnerships, GTM & Marketing, ETHDenver Prep, Documentation & Process, Technical, People Follow-ups, Testing, Backlog
+4. **Categories**: Leadership & Comms, Launch Prep, Team & Coordination, Analytics & Infra, Product & Design, Extension & Mobile, Partnerships, GTM & Marketing, {{LAUNCH_EVENT}} Prep, Documentation & Process, Technical, People Follow-ups, Testing, Backlog
 
 5. **Priority values**: 🔴 Urgent, 🟠 Important, 🟡 Normal, ⚪ Later
 

@@ -13,7 +13,7 @@ Create product documentation and artifacts. Everything a product lead needs: PRD
 - `docs/strategy/` — strategic context
 - `docs/market-research/` — landscape
 - `docs/narrative/` — positioning
-- `docs/product/master-shield-prd-roadmap.md` — master PRD (source of truth for {{PRODUCT}})
+- `docs/product/master-prd-roadmap.md` — master PRD (source of truth for {{PRODUCT}})
 - `docs/product/` — existing specs
 - `docs/feedback/` — user pain points, quotes, feature requests
 
@@ -25,7 +25,7 @@ Create product documentation and artifacts. Everything a product lead needs: PRD
 2. Gather requirements and context from conversation, existing docs in `docs/`, and any linked references
 3. Use the matching template. Fill in what's known, flag what's missing as open questions.
 4. Apply `.claude/skills/utils/writeDocs.md` rules before finalizing. Every artifact goes through the writing skill.
-5. Save to `docs/shield-<topic>.md`
+5. Save to `docs/{{PRODUCT}}-<topic>.md`
 
 ## Trigger
 "create PRD for [feature]", "write ticket for [task]", "feature brief for [X]", "launch checklist for [X]", "let's shape", "run prd", `/prd`
@@ -639,7 +639,7 @@ Add new entries at the top after each release. Include what shipped, key metrics
 - **Source code is the source of truth for protocol features.** Read it before speculating about what the chain supports. Don't list features the protocol doesn't have.
 
 ## Output Destinations
-- **Local file**: `docs/shield-<topic>.md` (always)
+- **Local file**: `docs/{{PRODUCT}}-<topic>.md` (always)
 - **Google Doc**: PRDs, Strategy Docs, Alignment Docs (write locally first, sync to Doc)
 - **Linear**: Tickets (extract from PRD/Feature Brief requirements)
 - **Slack**: Release Notes (adapt format for channel post)

@@ -11,11 +11,11 @@ Collect, tabulate, and prioritize user feedback from all sources into a Monday b
 
 ## Reads
 - `docs/feedback/` — prior feedback
-- `docs/product/master-shield-prd-roadmap.md` — master PRD (feature context, ICP, roadmap)
+- `docs/product/master-prd-roadmap.md` — master PRD (feature context, ICP, roadmap)
 
 ## Writes
 - `docs/users/` — processed feedback
-- Monday Feedback board: https://provable.monday.com/boards/18402201375
+- Monday Feedback board: {{MONDAY_BOARD_URL}}
 
 ## Dependencies
 - **Slack skill** (`.claude/skills/utils/slack.md`): Run the slack skill first (feedback mode) to pull fresh signals from Slack channels before processing.
@@ -35,7 +35,7 @@ Fetch messages from these Signal group chats using Signal MCP tools:
 | Chat | What to look for |
 |------|-----------------|
 | {{PRODUCT}}-Prod-Testing | Bug reports, UX feedback, feature requests, strategic debate, competitive intel |
-| ANF/PRO ETHDenver | Event feedback, user reactions at booth, partnership interest, live bugs |
+| ANF/PRO {{LAUNCH_EVENT}} | Event feedback, user reactions at booth, partnership interest, live bugs |
 | Product-ANF-{{COMPANY}} | Product decisions, cross-team feedback |
 | AP / {{YOUR_NAME}} | Direct user feedback from Alex Pruden (former {{CHAIN}} CEO) |
 
@@ -57,16 +57,16 @@ Fetch messages from these Signal group chats using Signal MCP tools:
 - Messages that are just reactions or acknowledgements
 
 ### 3. Google Sheets (input sources to merge from)
-- **Feedback Log (F&F + internal):** https://docs.google.com/spreadsheets/d/1wx4q3hTirEh9x5hNakfeYNL_RcmKaCtOoDQTi2s9TCo/edit
+- **Feedback Log (F&F + internal):** {{GOOGLE_SHEETS_URL}}
   - Sheet "Feedback": Source, Reporter, Feedback, Type, Severity, Status, Notes
   - Sheet "Survey 2": Tally-style survey responses (Timestamp, use case, ratings, bugs, device, recommendations)
-- **ETHDenver Booth Form (Responses):** https://docs.google.com/spreadsheets/d/1WsKUGTYmjaqNDW8drDokacGNptLcikv04N7DAZzCKE0/edit
+- **{{LAUNCH_EVENT}} Booth Form (Responses):** {{GOOGLE_SHEETS_URL}}
   - Sheet "Form Responses 1": Timestamp, Name, Day, observations, excitement (1-5), understanding (1-5), confusion (1-5), UI clarity (1-5), {{CHAIN}} knowledge (1-5), overall feedback, crypto knowledge level, unanswered questions, notes
 
-### 4. Tally.so
+### 4. {{FORM_TOOL}}
 Feedback forms (use Tally MCP server when available). Key forms:
-- ETHDenver field feedback: https://tally.so/r/b5Wz8L
-- ETHDenver booth feedback: https://forms.gle/TZS2W1gsCjxLyDWS6
+- {{LAUNCH_EVENT}} field feedback: https://{{FORM_TOOL}}/r/b5Wz8L
+- {{LAUNCH_EVENT}} booth feedback: https://forms.gle/TZS2W1gsCjxLyDWS6
 
 ### 5. Other
 - **App Stores**: iOS App Store, Google Play reviews
@@ -77,7 +77,7 @@ Feedback forms (use Tally MCP server when available). Key forms:
 
 ## Master Board (Monday)
 
-**URL:** https://provable.monday.com/boards/18402201375
+**URL:** {{MONDAY_BOARD_URL}}
 **Board ID:** `18402201375`
 
 One deduplicated issue per item. Use `mcp__claude_ai_monday_com` to read and write.
@@ -109,7 +109,7 @@ Run these in parallel:
 1. Run the slack skill (feedback mode) to get fresh Slack signals
 2. Run Signal scan (pull last 100 messages from each chat listed above)
 3. Read Monday feedback board via `mcp__claude_ai_monday_com__get_board_items_page` (board 18402201375) to check for new items since last scan
-4. Check Tally.so if MCP is available
+4. Check {{FORM_TOOL}} if MCP is available
 
 ### Step 2: Read existing master board
 Use `mcp__claude_ai_monday_com__get_board_items_page` with board ID `18402201375` to get all existing items.

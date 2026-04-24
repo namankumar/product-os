@@ -52,7 +52,7 @@ The brief does NOT read cache files in the main thread. It delegates all heavy r
 - `cache/brief/brief-*.md` — yesterday's daily (follow-through loop)
 - `cache/tasks/todos-[YYYY-MM-DD].md` — today's Kill List (produced by tasks skill)
 - `cache/status/status-*.md` — latest status snapshot
-- `docs/product/shield-funnel.md` — unified funnel data, OKR pace, conversion chain
+- `docs/product/{{PRODUCT}}-funnel.md` — unified funnel data, OKR pace, conversion chain
 - `docs/product/roadmap-prospective.md` — workstream themes
 - `context/current-context.md` — decision-making context
 - `context/cadences.md` — what's due, what's converging
@@ -64,7 +64,7 @@ The brief does NOT read cache files in the main thread. It delegates all heavy r
 - `docs/users/users.md` — active user relationships (if exists)
 - `cache/tasks/tasks-db.md` — for full state append and upcoming dates
 - `cache/brief/brief-*.md` — [weekly] all daily briefs from last 14 days
-- `docs/product/master-shield-prd-roadmap.md` — [weekly] roadmap for next-week planning
+- `docs/product/master-prd-roadmap.md` — [weekly] roadmap for next-week planning
 
 **Agent D reads all of these in a fresh context with zero conversation history.**
 
@@ -102,7 +102,7 @@ If any cache is stale, refresh per the **Parallel Scan Protocol** in `sources.md
 Do NOT have refresh agents return full scraped data. The cache file is the record.
 
 **Also run as parallel agents (only if their caches are stale):**
-- **Funnel skill** (`skills/funnel.md`) — refresh store and GA data into `docs/product/shield-funnel.md`.
+- **Funnel skill** (`skills/funnel.md`) — refresh store and GA data into `docs/product/{{PRODUCT}}-funnel.md`.
 - **Meeting notes skill** (`skills/meeting-notes.md`) — scan email for new meeting transcripts, extract decisions, commitments, people signals into `context/meeting-notes.md`.
 
 **After refresh agents complete — launch simultaneously:**
@@ -187,7 +187,7 @@ Each gets: what, who, source link, date, suggested deadline. Add to `cache/tasks
 > - Yesterday's brief: most recent `cache/brief/brief-*.md`
 > - Today's todos: `cache/tasks/todos-[YYYY-MM-DD].md`
 > - Latest status: most recent `cache/status/status-*.md`
-> - Funnel: `docs/product/shield-funnel.md`
+> - Funnel: `docs/product/{{PRODUCT}}-funnel.md`
 > - Themes: `docs/product/roadmap-prospective.md`
 > - Context: `context/current-context.md`
 > - Cadences: `context/cadences.md`
@@ -306,20 +306,20 @@ Risk = 🔴 when: blocked 3+ days, OR the person has escalated, OR downstream it
 - Cumulative: `wallet_onboarding_complete` / `wallet_mobile_onboarding_complete`, unique count
 - Tx users: `wallet_transaction_completed` / `wallet_mobile_transaction_completed`, unique count
 
-### OKR Pace (from `shield-funnel.md`)
+### OKR Pace (from `{{PRODUCT}}-funnel.md`)
 | OKR | Target | Current | Pace status |
 |---|---|---|---|
 | Downloads (KR2) | 3,500 | | |
 | Transfers (O3) | 5,000 | | |
 | Funded accounts (KR3) | 1,000 | | |
 
-### Conversion Chain (from `shield-funnel.md`)
+### Conversion Chain (from `{{PRODUCT}}-funnel.md`)
 [Reference the funnel doc's conversion chain. Highlight the biggest drop-off and any WoW regressions >20%.]
 
 [Flag notable spikes, drops, or funnel breakpoints. Skip if no change.]
 
 **What's the story:**
-- **Explained:** [metric movement that maps to a known event — launch, iOS block, ETHDenver spike, feature ship]
+- **Explained:** [metric movement that maps to a known event — launch, iOS block, {{LAUNCH_EVENT}} spike, feature ship]
 - **Unexplained:** [metric movement with no obvious cause — this is where product insights live, flag for investigation]
 
 Skip this subsection if all movements are within normal range and explained.

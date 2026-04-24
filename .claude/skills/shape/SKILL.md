@@ -20,13 +20,13 @@ Those belong in PRD and strategy. Shape produces the input to those skills.
 
 ## Reads (load selectively — only what's relevant to the idea)
 - `docs/market-research/` — demand signals, competitive analyses, precedent
-- `docs/product/master-shield-prd-roadmap.md` — conflicts or reinforcements with existing roadmap
+- `docs/product/master-prd-roadmap.md` — conflicts or reinforcements with existing roadmap
 - `docs/strategy/` — active strategic bets this idea should serve or challenge
 - `docs/gtm/` — distribution context: who we're reaching, how, what's working
 - `docs/narrative/` — positioning and messaging this idea must fit or shift
 - `context/current-context.md` — why now, constraints, active decisions
 - `docs/feedback/` — user signal behind the idea
-- `docs/product/shield-funnel.md` — funnel and product data (load if idea touches acquisition, activation, or retention)
+- `docs/product/{{PRODUCT}}-funnel.md` — funnel and product data (load if idea touches acquisition, activation, or retention)
 
 ## Writes
 - `docs/product/shape-[idea-name].md`

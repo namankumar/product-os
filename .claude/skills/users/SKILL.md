@@ -11,7 +11,7 @@ Track and manage relationships with potential {{PRODUCT}} users across Signal, e
 
 ## Reads
 - `docs/users/users.md` — current pipeline state
-- `docs/product/master-shield-prd-roadmap.md` — master PRD (ICP definitions, roadmap context)
+- `docs/product/master-prd-roadmap.md` — master PRD (ICP definitions, roadmap context)
 - `cache/feedback-monday.md` — cross-reference if a pipeline contact reported something
 
 ## Writes
@@ -40,7 +40,7 @@ Track and manage relationships with potential {{PRODUCT}} users across Signal, e
 | Field | Value |
 |-------|-------|
 | Channel | Signal / Email / Telegram / Multiple |
-| Source | ETHDenver booth / Intro from [person] / Inbound / etc. |
+| Source | {{LAUNCH_EVENT}} booth / Intro from [person] / Inbound / etc. |
 | Added | YYYY-MM-DD |
 | Last Contact | YYYY-MM-DD |
 | Temperature | Hot / Warm / Cold |

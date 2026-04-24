@@ -15,7 +15,7 @@ Optimize and elevate the {{PRODUCT}} experience across Chrome extension and mobi
 - `docs/feedback/` — user complaints mapped to flows
 - `docs/market-research/` — competitor UX patterns
 - `docs/strategy/` — what we're optimizing for (acquisition, retention, moat)
-- `docs/product/master-shield-prd-roadmap.md` — master PRD and roadmap (what's shipping, what's next)
+- `docs/product/master-prd-roadmap.md` — master PRD and roadmap (what's shipping, what's next)
 
 ## Writes
 - `docs/product/` — UX audit reports, improvement specs, craft proposals

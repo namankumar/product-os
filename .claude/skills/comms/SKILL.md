@@ -24,7 +24,7 @@ Create communications that position {{YOUR_NAME}} as the product leader driving 
 - `docs/strategy/` — strategic context
 - `docs/narrative/` — messaging, positioning
 - `docs/product/` — what shipped
-- `docs/product/master-shield-prd-roadmap.md` — master PRD and roadmap (source of truth)
+- `docs/product/master-prd-roadmap.md` — master PRD and roadmap (source of truth)
 - `tasks-db.md` — current tasks
 - `done.md` — completed tasks
 
@@ -61,7 +61,7 @@ Comms should demonstrate leadership, not claim it. Techniques:
 - **Frame blockers as decisions you're driving**: Not "we're blocked on X" but "I'm pushing for a decision on X by Friday"
 
 ## Input Sources
-1. **Slack Digest**: `cache/comms/shield-slack-digest-*.md` for recent activity
+1. **Slack Digest**: `cache/comms/{{PRODUCT}}-slack-digest-*.md` for recent activity
 2. **Project Status**: Latest status from todos, roadmap
 3. **Feedback Engine Output**: Key feedback themes
 4. **Strategic Radar Output**: Market context, competitor moves
@@ -194,7 +194,7 @@ Before finalizing, re-read the room file. Scan the draft through each person's l
 
 ### Executive Roadmap Summary ({{FOUNDER_CEO}}, {{COO}}, Board)
 
-90-second briefing format. Takes a roadmap and distills it into what leadership actually needs: outcomes, impact, and risk. Pull from `docs/product/master-shield-prd-roadmap.md` and `docs/strategy/`.
+90-second briefing format. Takes a roadmap and distills it into what leadership actually needs: outcomes, impact, and risk. Pull from `docs/product/master-prd-roadmap.md` and `docs/strategy/`.
 
 ```markdown
 ## Q[X]: [Theme]
@@ -321,7 +321,7 @@ Weekly cross-workstream snapshot. Pulls from project skill inputs (Linear, Monda
 - [Priority 1]
 - [Priority 2]
 
-**Output destinations**: Google Doc (weekly status doc), Slack to #shield-wallet-leadership, Email to {{FOUNDER_CEO}}/{{COO}} (if requested)
+**Output destinations**: Google Doc (weekly status doc), Slack to #{{PRODUCT}}-leadership, Email to {{FOUNDER_CEO}}/{{COO}} (if requested)
 
 ---
 

@@ -78,11 +78,11 @@ Chat is not docs, and it's not X. Different failure modes.
 
 **Calibration from real edits (Feb 24, 2026):**
 - "i do think we have to balance" → in docs, cut "I think." In Signal, {{YOUR_NAME}} actually hedges like this. It's conversational. The rule is channel-dependent: kill hedges in docs and X, allow them in chat.
-- "that's just not good for ALEO" → "just" is a softener {{YOUR_NAME}} uses in chat but not in docs. Don't strip it.
+- "that's just not good for {{PRODUCT}}" → "just" is a softener {{YOUR_NAME}} uses in chat but not in docs. Don't strip it.
 - {{YOUR_NAME}}'s chat replies are one block of connected reasoning, not three surgically separated messages with one idea each.
 
 **Calibration from debate replies (Feb 24, 2026):**
-- Claude drafts too much setup. "wallets exist, privacy wallets exist, zk proofs exist. moore's framework is about unproven technology where innovators need to validate that it works at all." {{YOUR_NAME}}'s version: "shield isn't new tech, which is what this framework applies to." State the conclusion, skip the proof. The reader can work backwards.
+- Claude drafts too much setup. "wallets exist, privacy wallets exist, zk proofs exist. moore's framework is about unproven technology where innovators need to validate that it works at all." {{YOUR_NAME}}'s version: "{{PRODUCT}} isn't new tech, which is what this framework applies to." State the conclusion, skip the proof. The reader can work backwards.
 - Don't explain the framework back to the person who cited it. They know what it says. Just say where it breaks.
 - Claude adds filler reasoning in the middle. {{YOUR_NAME}} cuts straight from the reframe to the punchline. No bridge sentences.
 - {{YOUR_NAME}} adds a second framing that's more concrete and human: "is this product good enough to switch to" became "is it better than what i do today." Always ground abstract arguments in the user's lived experience.

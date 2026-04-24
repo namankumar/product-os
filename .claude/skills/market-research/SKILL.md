@@ -11,7 +11,7 @@ Scan the competitive landscape, market trends, and ecosystem developments to inf
 ## Reads
 - `docs/market-research/` — current landscape
 - `docs/strategy/` — our position
-- `docs/product/master-shield-prd-roadmap.md` — master PRD and roadmap (source of truth)
+- `docs/product/master-prd-roadmap.md` — master PRD and roadmap (source of truth)
 
 ## Writes
 - `docs/market-research/` — new intel
@@ -25,7 +25,7 @@ Scan the competitive landscape, market trends, and ecosystem developments to inf
 1. **Web Search**: Competitor announcements, crypto news, privacy tech developments
 2. **Twitter/X**: Crypto influencers, competitor accounts, privacy community
 3. **Competitor Products**: Railgun, Tornado Cash forks, other privacy wallets
-4. **Industry Reports**: Messari, Delphi, a16z crypto reports
+4. **Industry Reports**: Messari, Delphi, {{INVESTOR_FIRM}} crypto reports
 5. **Ecosystem Updates**: {{CHAIN}}, NEAR, stablecoin regulations
 6. **Internal Analytics**: Amplitude/Mixpanel for user behavior signals
 7. **Feedback Engine Output**: What users are asking for

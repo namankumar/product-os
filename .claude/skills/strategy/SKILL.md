@@ -21,7 +21,7 @@ Create executive-grade strategy alignment documents — roadmap, timeline, GTM, 
 - `docs/strategy/` — prior strategy docs
 - `docs/market-research/` — landscape, TAM, trends
 - `docs/narrative/` — positioning
-- `docs/product/master-shield-prd-roadmap.md` — master PRD and roadmap (source of truth)
+- `docs/product/master-prd-roadmap.md` — master PRD and roadmap (source of truth)
 
 ## Writes
 - `docs/strategy/` — strategy docs, execution plans

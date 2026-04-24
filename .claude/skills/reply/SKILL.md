@@ -195,20 +195,20 @@ Each message should flow from the last. The reader should feel like they're foll
 
 ## Example: The Eddy Reply (Feb 21)
 
-**Context:** Eddy (CTO of a16z crypto) said "I like this frame but I'm hoping people come to aleo because they want the full payments + defi + holding any tokens (including RWAs) + value ALEO in its own right!"
+**Context:** {{INVESTOR_NAME}} (partner at {{INVESTOR_FIRM}}) said "I like this frame but I'm hoping people come to aleo because they want the full payments + defi + holding any tokens (including RWAs) + value ALEO in its own right!"
 
-**Goal:** Redirect from Eddy's aspirational ordering (payments first, holding third) to {{YOUR_NAME}}'s thesis (privacy/holding is the near-term edge) without disagreeing.
+**Goal:** Redirect from {{INVESTOR_NAME}}'s aspirational ordering (payments first, holding third) to {{YOUR_NAME}}'s thesis (privacy/holding is the near-term edge) without disagreeing.
 
 **Process:**
 1. Validated ("love the full vision!")
 2. Deflated the uniqueness of the endgame ("every L1 from Solana to Sui has the same endgame")
 3. Connected to time ("it'll take a couple years to play out for {{CHAIN}}")
 4. Established the real edge ("privacy narrative is the hottest it's been in years, wallet is the only app live on {{CHAIN}}")
-5. Addressed Eddy's ALEO token interest ("both for usage and ALEO")
+5. Addressed {{INVESTOR_NAME}}'s ALEO token interest ("both for usage and ALEO")
 6. Closed with who converts now ("zcash community and commodity traders")
 7. Removed all edges: no "but," no periods between flowing thoughts, no rhetorical questions, no "I think"
 
-**Result (three messages, matching Eddy's flowing style):**
+**Result (three messages, matching {{INVESTOR_NAME}}'s flowing style):**
 
 "love the full vision! absolutely where we're headed long term, every general purpose L1 from Solana to Sui has the same endgame which means it'll take a couple of years to play out for {{CHAIN}}
 

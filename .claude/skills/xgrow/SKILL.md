@@ -295,7 +295,7 @@ Use `agent-browser --session x-scan --state ~/.agent-browser/x-auth.json open` t
 Use X's search to find recent posts from target accounts and topics. Search queries rotate through, **AI-first**:
 - **Daily 8 (scan first, every day):** `from:ropirito OR from:ethermage OR from:MurrLincoln OR from:v_vashishta OR from:somewheresy OR from:_inesmontani OR from:marek_rosa OR from:CodeHagen`
 - **Tier 1 bench (rotate in when daily 8 haven't posted):** `from:bencera OR from:chhddavid OR from:tessalau OR from:FelixCraftAI OR from:lishali88 OR from:0xROAS OR from:Unibase_AI`
-- **Tier 2 handles (30K-100K, 3-4x/week):** `from:Reza_Zadeh OR from:vinod1975 OR from:cryptopunk7213 OR from:Kanojiyaaakash1 OR from:jxnlco OR from:sandraleow OR from:PrajwalTomar_ OR from:nigewillson OR from:Griffin_AI OR from:andruyeung OR from:TeachTheMachine OR from:Matt_Hougan`
+- **Tier 2 handles (30K-100K, 3-4x/week):** `from:{{HANDLE_1}} OR from:{{HANDLE_2}} OR from:{{HANDLE_3}}`
 - **Tier 3 handles (100K-300K, weekly only):** `from:Thom_Wolf OR from:lennysan OR from:alexalbert__ OR from:chipro OR from:shawmakesmagic OR from:Austin_Federa OR from:ljin18 OR from:mckaywrigley OR from:LinusEkenstam OR from:heyBarsee OR from:simon_willison OR from:OfficialLoganK OR from:shreyas`
 - **Topic keywords (AI-first):** "Claude Code", "building with AI", "AI agents", "vibe coding", "shipping fast", "AI workflow", "coding with AI", "AI productivity"
 - **Topic keywords (crypto/fintech):** "stablecoins", "crypto product", "privacy blockchain", "fintech UX", "AI agents crypto", "onchain privacy"
@@ -613,7 +613,7 @@ Load the full list from `projects/growsocial/x/strategy.md`. Sweet spot is **5K-
 
 ### Tier 2: 3-4x/week (30K-100K — only with <100 replies)
 
-@Reza_Zadeh (33.4K), @vinod1975 (36.6K), @cryptopunk7213 (41.8K), @Kanojiyaaakash1 (40.7K), @jxnlco (46.4K), @sandraleow (47.5K), @PrajwalTomar_ (52.1K), @nigewillson (57.3K), @Griffin_AI (67.7K), @andruyeung (68.3K), @TeachTheMachine (74.4K), @Matt_Hougan (95.7K)
+@{{HANDLE_1}} ({{FOLLOWERS}}), 
 
 ### Tier 3: Weekly (100K-300K — only with genuinely sharp take)
 
@@ -632,7 +632,7 @@ Follower count is irrelevant here — the **audience profile** is what matters. 
 
 ### Tier 5: Ecosystem + privacy (relationship, not growth)
 
-@{{CHAIN}}HQ, @{{COMPANY}}HQ, @a16zcrypto, @matthew_d_green, @zooko, @BostonZcash, @TheDesertLynx
+@{{CHAIN}}HQ, @{{COMPANY}}HQ, @{{INVESTOR_FIRM}}crypto, @matthew_d_green, @zooko, @BostonZcash, @TheDesertLynx
 Don't count toward daily reply goals. Engage for community reasons only.
 
 ## Reply-Back Targets (who actually replies back)
@@ -647,7 +647,7 @@ Prioritize accounts where reply-back probability is high. Reply-backs = 75x a li
 | @v_vashishta | Daily 8 | HIGH | Enterprise ML + fintech. Loves debate |
 | @CodeHagen | Daily 8 | HIGH | Open-source AI agents. Active engager |
 | @PawelHuryn | Tier 2 | HIGH | Builder observations about AI workflows. Posts constantly |
-| @jxnlco | Tier 2 | HIGH | AI engineering. Technical depth triggers responses |
+| @{{HANDLE_2}} | Tier 2 | HIGH | AI engineering. Technical depth triggers responses |
 | @jessepollak | Tier 2 | MEDIUM | Product-level observations about onchain UX |
 | @mckaywrigley | Tier 3 | MEDIUM | AI builder specifics. Ships with Claude, engages on workflow |
 | @shawmakesmagic | Tier 3 | MEDIUM | Specific technical observations about agent infra. Now Tier 3 (163.7K) |
@@ -807,7 +807,7 @@ Full analysis in `projects/growsocial/x/algorithm.md`. These rules are derived f
 - **Track what works.** Each daily should reference yesterday's performance if data is available.
 - **Adapt the strategy.** If a pillar isn't getting traction after 2 weeks, adjust weights in strategy.md.
 - **Stay authentic.** These are {{YOUR_NAME}}'s posts. They should sound like him, not like a growth hacker.
-- **No repeat angles within 5 days.** Before drafting, read the last 5 files in `cache/xgrow/` and check their "Angles Used Today" tables. If a proof point appeared in the last 5 days (e.g. "15 slack channels", "20+ skills", "daily briefings"), find a different angle. {{YOUR_NAME}} has more than one story. Draw from product decisions, debugging war stories, team dynamics, competitive observations, tester feedback, ETHDenver prep, privacy community takes, specific tool opinions. If the experience bank (`projects/growsocial/planning/bank.md`) exists, pull from it.
+- **No repeat angles within 5 days.** Before drafting, read the last 5 files in `cache/xgrow/` and check their "Angles Used Today" tables. If a proof point appeared in the last 5 days (e.g. "15 slack channels", "20+ skills", "daily briefings"), find a different angle. {{YOUR_NAME}} has more than one story. Draw from product decisions, debugging war stories, team dynamics, competitive observations, tester feedback, {{LAUNCH_EVENT}} prep, privacy community takes, specific tool opinions. If the experience bank (`projects/growsocial/planning/bank.md`) exists, pull from it.
 - **No repeat plays within 3 days.** Before drafting, read the last 3 files in `cache/xgrow/` and check their rotation tracking comment. If a play was used in the last 3 days, pick a different one. 33 plays available in `x/plays.md`. Rotating plays keeps the feed unpredictable and avoids pattern detection (both human and algorithmic).
 
 ## Trigger

@@ -16,7 +16,7 @@ Track the live status of every item across every workstream in a project. Scans 
 - `cache/status/status-*.md` — prior status snapshot (diff against most recent)
 - `context/current-context.md` — {{YOUR_NAME}}'s decision-making context, interpretive notes across workstreams
 - `context/meeting-notes.md` — meeting extractions (produced by meeting-notes skill)
-- `docs/product/master-shield-prd-roadmap.md` — master PRD and roadmap (on-demand, for milestone mapping)
+- `docs/product/master-prd-roadmap.md` — master PRD and roadmap (on-demand, for milestone mapping)
 
 ## Writes
 - `cache/status/status-[YYYY-MM-DD].md` — the status snapshot for today
@@ -41,7 +41,7 @@ A workstream is a functional area that ships work toward the project. Workstream
 |---|---|---|---|
 | Mobile Engineering | Mobile app features, bugs, infra, SDK | {{ENG_LEAD}}, engineering team | Linear |
 | Extension Engineering | Browser extension features, bugs | Extension team | Monday |
-| Design | UX, UI, flows, design system, prototypes | Alexander Avdeev | Monday ([filtered view](https://provable.monday.com/boards/18317994977/?userId=97678978)), Slack (#shield-design) |
+| Design | UX, UI, flows, design system, prototypes | {{DESIGNER}} | Monday ([filtered view](https://{{MONDAY_BOARD_URL}}?userId=97678978)), Slack (#{{PRODUCT}}-design) |
 | Marketing | Launch campaigns, website, social, content | Kyle, Sophia, Meredith | Slack, Docs |
 | Partnerships | Circle ({{STABLECOIN_A}}), Paxos ({{STABLECOIN_B}}), Houdini, Hyperlane, exchanges | BD team | Slack, Docs |
 | Legal | ToS, privacy policy, compliance, licensing | Damien | Slack, Docs |
@@ -297,4 +297,4 @@ Save to `cache/status/status-[YYYY-MM-DD].md`.
 
 ## Trigger
 
-`/status`, "status update", "project status", "workstream status", "what's the status of shield"
+`/status`, "status update", "project status", "workstream status", "what's the status of {{PRODUCT}}"

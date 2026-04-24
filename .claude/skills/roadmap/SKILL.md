@@ -18,7 +18,7 @@ Manage product roadmap as a strategic artifact. Roadmap = features/initiatives e
 - `context/okr-status.md` — OKR targets (roadmap items must advance company OKRs, flag overlap)
 - `context/narrative-map.md` — active narratives (roadmap should reinforce narratives we're pushing)
 - `context/cadences.md` — sprint cycles, upcoming milestones (timing context for Now/Next/Later)
-- `docs/product/master-shield-prd-roadmap.md` — master PRD and roadmap (source of truth)
+- `docs/product/master-prd-roadmap.md` — master PRD and roadmap (source of truth)
 - `docs/product/roadmap-prospective.md` — features under consideration
 - `docs/strategy/` — strategy docs, execution plans
 - `docs/market-research/` — competitive analyses
@@ -26,13 +26,13 @@ Manage product roadmap as a strategic artifact. Roadmap = features/initiatives e
 - `tasks-db.md` — parking lot items
 
 ## Writes
-- `docs/product/master-shield-prd-roadmap.md` — master PRD and roadmap (source of truth)
+- `docs/product/master-prd-roadmap.md` — master PRD and roadmap (source of truth)
 - `docs/product/roadmap-prospective.md` — prospective features
 
 ## Input Sources
 
 ### Primary
-1. **docs/product/master-shield-prd-roadmap.md** — committed roadmap
+1. **docs/product/master-prd-roadmap.md** — committed roadmap
 2. **docs/product/roadmap-prospective.md** — features under consideration (not yet committed)
 3. **Parking Lot** — items flagged as "Roadmap Idea" in todos
 
@@ -40,7 +40,7 @@ Manage product roadmap as a strategic artifact. Roadmap = features/initiatives e
 5. **Strategy docs** — `docs/*strategy*.md`, `docs/*plan*.md`, `docs/*execution*.md`
 6. **Competitive analyses** — `docs/*analysis*.md` (Aave, Zcash, Houdini, etc.)
 7. **Narrative docs** — `docs/*narrative*.md`, `docs/*messaging*.md`, `docs/*positioning*.md`
-8. **Existing PRDs and feature briefs** — `docs/product/shield-*.md`
+8. **Existing PRDs and feature briefs** — `docs/product/{{PRODUCT}}-*.md`
 
 ### Feature Discovery
 10. **Conversation history** — features discussed in past sessions but never formally tracked
@@ -52,7 +52,7 @@ Manage product roadmap as a strategic artifact. Roadmap = features/initiatives e
 Don't read everything. Use this triage process:
 
 ### Step 0: Read the index
-Read `docs/product/master-shield-prd-roadmap.md` first. It contains a "Source Docs" section at the top listing which strategy, competitive, and narrative docs informed the current roadmap. Start there.
+Read `docs/product/master-prd-roadmap.md` first. It contains a "Source Docs" section at the top listing which strategy, competitive, and narrative docs informed the current roadmap. Start there.
 
 ### Step 1: Glob for candidates
 Search `docs/` with these patterns:
@@ -77,7 +77,7 @@ A doc is relevant if:
 Skip docs that cover different product areas, archived strategies, or topics unrelated to the features being evaluated.
 
 ### Step 4: Tag sources in output
-Every roadmap justification must cite the specific doc it drew from: "Per shield-6mo-strategy.md, Phase 2 prioritizes..." This creates traceability and makes it easy to re-evaluate when source docs change.
+Every roadmap justification must cite the specific doc it drew from: "Per {{PRODUCT}}-strategy.md, Phase 2 prioritizes..." This creates traceability and makes it easy to re-evaluate when source docs change.
 
 ### Narrative Docs: How They Inform Roadmap
 Narrative docs define how we position {{PRODUCT}} to users and the market. They affect roadmap in two ways:
@@ -87,7 +87,7 @@ Narrative docs define how we position {{PRODUCT}} to users and the market. They 
 ## Process
 
 ### Step 1: Load Strategic Context
-1. Read existing `docs/product/master-shield-prd-roadmap.md` — start with the "Source Docs" header to know what's already been referenced
+1. Read existing `docs/product/master-prd-roadmap.md` — start with the "Source Docs" header to know what's already been referenced
 2. Read `docs/product/roadmap-prospective.md` for current state
 3. Follow the "How to Find Relevant Docs" triage process to identify which strategy, competitive, and narrative docs to deep-read
 4. Scan Parking Lot in `tasks-db.md` for items marked "Roadmap Idea" or "Later"
@@ -175,10 +175,10 @@ Categorize by:
 - **Not Doing** (decided against, with reasoning)
 
 ### Step 7: Update Files
-1. Update `docs/product/master-shield-prd-roadmap.md` with committed items (Now, Next, Later) and Not Doing
+1. Update `docs/product/master-prd-roadmap.md` with committed items (Now, Next, Later) and Not Doing
 2. Update `docs/product/roadmap-prospective.md` with Maybe items and features under active evaluation
 3. Remove "Roadmap Idea" items from `tasks-db.md` Parking Lot
-6. Update the "Source Docs" header in `docs/product/master-shield-prd-roadmap.md` with docs referenced this session
+6. Update the "Source Docs" header in `docs/product/master-prd-roadmap.md` with docs referenced this session
 
 ## Storage
 
@@ -186,10 +186,10 @@ Four files, each with a distinct purpose:
 
 | File | What lives here | Who reads it |
 |------|----------------|-------------|
-| `docs/product/master-shield-prd-roadmap.md` | Committed roadmap (Now/Next/Later) + Not Doing. The canonical "what are we building and why." | Everyone. This is the source of truth. |
+| `docs/product/master-prd-roadmap.md` | Committed roadmap (Now/Next/Later) + Not Doing. The canonical "what are we building and why." | Everyone. This is the source of truth. |
 | `docs/product/roadmap-prospective.md` | Features under consideration (Maybe). Active evaluations, open questions, pending decisions. | Product + eng leads during planning. |
 
-### docs/product/master-shield-prd-roadmap.md structure
+### docs/product/master-prd-roadmap.md structure
 ```
 # {{PRODUCT}} Roadmap
 

@@ -276,7 +276,7 @@ When analyzing current narratives in Step 2, use these tools to gather quantitat
 - Note how many protocols are positioning around the same narrative
 
 **VC/Thought Leader Signals:**
-- Messari research reports, a16z crypto blog, Pantera newsletters
+- Messari research reports, {{INVESTOR_FIRM}} crypto blog, Pantera newsletters
 - Conference talks (ETH Denver, Consensus, Devcon) — what themes dominated panels?
 
 **Deep Research Agent:**
