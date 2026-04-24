@@ -20,13 +20,13 @@ Context compounds. OKRs, positioning, team dynamics, writing voice. All in files
 - `/feedback` — collect, triage, prioritize
 - `/users` — user relationship tracking
 - `/ux` — UX audits, funnel analysis, proposals
+- `/shape` — give form to a fuzzy idea before committing to a PRD
 
 **Strategy and research**
 - `/strategy` — executive-grade strategy docs
 - `/competitive-analysis` — deep dives, extract learnings
 - `/market-research` — landscape scans, sizing, segment research
 - `/narrative` — positioning and messaging
-- `/shape` — give form to a fuzzy idea before committing to a PRD
 
 **Comms and content**
 - `/comms` — leadership updates, investor comms
