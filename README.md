@@ -1,6 +1,6 @@
 # product-os
 
-An AI harness for product work. 21 skills across the full product lifecycle. Fork it, fill in your context, and a small team runs like a much larger one.
+An AI harness for product work. 21 skills across the full product lifecycle. Fork it, fill in your context. Your robot army.
 
 Skills capture how great product work gets done: research before a decision, narrative before a pitch, user synthesis. Each skill is a complete process: what to read, how to think, what to produce. Invoke one, get the output.
 
