@@ -6,6 +6,8 @@ Skills capture how great product work gets done: research before a decision, nar
 
 Context compounds. OKRs, positioning, team dynamics, writing voice. All in files Claude reads before every session. Each output becomes context for the next. The longer you use it, the more capable it gets.
 
+Output quality is enforced at the skill level. Each skill defines output structure, required context reads, and a failure-mode checklist Claude applies before producing final output. The writing eval covers 25 named patterns across four categories: LLM voice (summary bows, corrective antithesis, parallel triads, hedge words), redundancy (bracket explanations, bold restatements), rhythm (staccato on repeat, cookie-cutter paragraphs), and generic writing. Flagged output gets rewritten before it lands in docs.
+
 ## What you can do
 
 **Daily operations**
