@@ -1,6 +1,6 @@
 # product-os
 
-I rebuilt my job around Claude Code. Every function — morning briefing, strategy docs, PRDs, competitive analysis, user tracking, content — runs on a skill. Each skill is a complete process: what to read before writing, how to think through the problem, what the output looks like, and a named failure-mode checklist Claude applies before finalizing. Invoke one, get the output.
+Running product means synthesizing signal from a dozen directions simultaneously — team, stakeholders, users, market, investors. I built this to do that without losing the thread. Every function runs on a skill: a complete process with required context reads, output structure, and a named failure-mode checklist Claude applies before finalizing. Invoke one, get the output.
 
 Context compounds. OKRs, positioning, team dynamics, writing voice — all in files Claude reads before every session. Each output becomes context for the next. The longer you use it, the sharper it gets.
 
@@ -16,21 +16,23 @@ Refresh agents are stateless and parallelizable. The synthesis agent gets zero c
 
 ## What you can do
 
-**Daily operations**
-- `/brief` — morning brief across all data sources, or weekly review
-- `/status` — workstream tracking, blockers, dependencies
-- `/meeting-notes` — extract decisions, commitments, people signals from transcripts
-- `/tasks` — organize todos, surface urgent work
+**Cross-team visibility**
+- `/brief` — synthesize signal across teams, sources, and stakeholders into one morning view
+- `/status` — track what's moving, stuck, and where you need to intervene across workstreams
+- `/meeting-notes` — surface who committed to what, who owes you what, and what the political subtext was
+- `/tasks` — surface urgent work across all open threads
 
-**Product**
+**Decision support**
+- `/shape` — give form to a fuzzy idea before committing resources to it
+- `/feedback` — synthesize signal across users, team, and stakeholders into a prioritized read
+- `/users` — track relationships, surface follow-ups, manage the people side of GTM
+
+**Product development**
 - `/prd` — PRDs, briefs, checklists, decision logs
 - `/roadmap` — roadmap management
-- `/feedback` — collect, triage, prioritize
-- `/users` — user relationship tracking
 - `/ux` — UX audits, funnel analysis, proposals
-- `/shape` — give form to a fuzzy idea before committing to a PRD
 
-**Strategy and research**
+**Strategic research**
 - `/strategy` — executive-grade strategy docs
 - `/competitive-analysis` — deep dives, extract learnings
 - `/market-research` — landscape scans, sizing, segment research
@@ -39,7 +41,7 @@ Refresh agents are stateless and parallelizable. The synthesis agent gets zero c
 **GTM workflow**
 Run `/market-research`, `/competitive-analysis`, `/narrative` first. The GTM plan follows from that output. Write it to `docs/gtm/`.
 
-**Comms and content**
+**Stakeholder comms and content**
 - `/comms` — leadership updates, investor comms
 - `/reply` — voice-matched replies for any channel
 - `/xgrow` — daily X/Twitter content engine
