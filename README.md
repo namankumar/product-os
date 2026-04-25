@@ -1,14 +1,18 @@
 # product-os
 
-An AI harness for product work. 21 skills across the full product lifecycle. Fork it, fill in your context. Your robot army.
+I rebuilt my job around Claude Code. Every function — morning briefing, strategy docs, PRDs, competitive analysis, user tracking, content — runs on a skill. Each skill is a complete process: what to read before writing, how to think through the problem, what the output looks like, and a named failure-mode checklist Claude applies before finalizing. Invoke one, get the output.
 
-Skills capture how great product work gets done: research before a decision, narrative before a pitch, user synthesis. Each skill is a complete process: what to read, how to think, what to produce. Invoke one, get the output.
+Context compounds. OKRs, positioning, team dynamics, writing voice — all in files Claude reads before every session. Each output becomes context for the next. The longer you use it, the sharper it gets.
 
-Context compounds. OKRs, positioning, team dynamics, writing voice. All in files Claude reads before every session. Each output becomes context for the next. The longer you use it, the more capable it gets.
-
-Output quality is enforced at the skill level. Each skill defines output structure, required context reads, and a failure-mode checklist Claude applies before producing final output. The writing eval covers 25 named patterns across four categories: LLM voice (summary bows, corrective antithesis, parallel triads, hedge words), redundancy (bracket explanations, bold restatements), rhythm (staccato on repeat, cookie-cutter paragraphs), and generic writing. Flagged output gets rewritten before it lands in docs.
+Output quality is enforced at the skill level. The writing eval covers 25 named patterns across four categories: LLM voice (summary bows, corrective antithesis, parallel triads, hedge words), redundancy (bracket explanations, bold restatements), rhythm (staccato on repeat, cookie-cutter paragraphs), and generic writing. Flagged output gets rewritten before it lands in docs.
 
 The design bets: skills over chat (repeatable beats ad-hoc), files over databases (portable beats locked-in), explicit context over implicit memory (auditable beats opaque). Each bet trades setup cost for compounding return.
+
+## Architecture
+
+The brief skill runs 16+ parallel refresh agents across MCPs, CLIs, and custom browser simulations — one per data source. Each agent writes to a cache file and returns a delta: what changed since the last run. A single synthesis agent then reads all caches plus context files in one pass with a fresh 200K-token context.
+
+Refresh agents are stateless and parallelizable. The synthesis agent gets zero conversation overhead. Clean data, full context.
 
 ## What you can do
 
@@ -44,31 +48,6 @@ Run `/market-research`, `/competitive-analysis`, `/narrative` first. The GTM pla
 - `/essay` — structured essays
 - `/harvest` — extract experience bank entries from sessions
 
-## How it works
-
-```
-You                Claude Code              Workspace
-───                ───────────              ─────────
-/brief          →  reads brief skill    →   context/ (OKRs, narratives, cadences)
-                   runs data sources    →   cache/ (scan outputs)
-                   writes output        →   docs/daily/YYYY-MM-DD.md
-
-/prd            →  reads prd skill      →   context/ (product context)
-                   reads existing PRDs  →   docs/product/
-                   writes new PRD       →   docs/product/prd-feature.md
-
-/strategy       →  reads strategy skill →   context/ + docs/market-research/
-                   synthesizes          →   docs/strategy/strategy-topic.md
-```
-
-Claude Code runs the skill. The workspace is the memory.
-
-## Brief architecture
-
-The brief skill runs 16 parallel refresh agents, one per data source, then a single synthesis agent with a fresh 200K-token context. The refresh agents write to cache files and return a delta: what changed since the last run. The synthesis agent reads all 16 caches plus all context files in one pass and cross-references across them.
-
-Refresh agents are stateless and parallelizable. The synthesis agent gets zero conversation overhead. Just clean data and context.
-
 ## How to fork
 
 1. Fork this repo
@@ -103,4 +82,3 @@ product-os/
 ├── cache/                 # Machine-generated scan data
 └── projects/
 ```
-
